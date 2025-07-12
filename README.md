@@ -1,4 +1,4 @@
-# VertexCrew-StackIt
+Please check the secondary branch "Odoo" for code <br>
 Team name: Vertex Crew <br>
 Problem statement: StackIt – A Minimal Q&A Forum Platform<br>
 Team members:<br>
