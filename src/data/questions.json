@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "How to implement React hooks properly?",
+    "content": "<p>I'm new to React and trying to understand hooks. Can someone explain the best practices for using useState and useEffect?</p>",
+    "author": "john_doe",
+    "authorName": "John Doe",
+    "tags": ["react", "javascript", "hooks"],
+    "votes": 5,
+    "answers": ["2", "3"],
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "2",
+    "title": "What's the difference between let, const, and var in JavaScript?",
+    "content": "<p>I've been using JavaScript for a while but I'm still confused about when to use let, const, and var. Can someone clarify the differences?</p>",
+    "author": "jane_smith",
+    "authorName": "Jane Smith",
+    "tags": ["javascript", "es6", "variables"],
+    "votes": 12,
+    "answers": ["4"],
+    "createdAt": "2024-01-14T15:45:00Z",
+    "updatedAt": "2024-01-14T15:45:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Best practices for API error handling in React",
+    "content": "<p>I'm building a React app that makes several API calls. What are the best practices for handling errors and showing user-friendly messages?</p>",
+    "author": "dev_expert",
+    "authorName": "Dev Expert",
+    "tags": ["react", "api", "error-handling"],
+    "votes": 8,
+    "answers": [],
+    "createdAt": "2024-01-13T09:20:00Z",
+    "updatedAt": "2024-01-13T09:20:00Z"
+  }
+] 

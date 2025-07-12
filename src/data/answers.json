@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "questionId": "1",
+    "content": "<p>React hooks are functions that allow you to use state and other React features in functional components. Here are some best practices:</p><ul><li>Always call hooks at the top level of your component</li><li>Don't call hooks inside loops, conditions, or nested functions</li><li>Use the dependency array in useEffect properly</li></ul>",
+    "author": "react_guru",
+    "authorName": "React Guru",
+    "votes": 15,
+    "isAccepted": true,
+    "createdAt": "2024-01-15T11:00:00Z",
+    "updatedAt": "2024-01-15T11:00:00Z"
+  },
+  {
+    "id": "2",
+    "questionId": "1",
+    "content": "<p>Another important point is to use custom hooks to extract component logic into reusable functions. This helps keep your components clean and makes the logic reusable across different components.</p>",
+    "author": "code_master",
+    "authorName": "Code Master",
+    "votes": 8,
+    "isAccepted": false,
+    "createdAt": "2024-01-15T12:30:00Z",
+    "updatedAt": "2024-01-15T12:30:00Z"
+  },
+  {
+    "id": "3",
+    "questionId": "2",
+    "content": "<p>Here's a quick breakdown:</p><ul><li><strong>var</strong>: Function-scoped, can be redeclared and reassigned</li><li><strong>let</strong>: Block-scoped, can be reassigned but not redeclared</li><li><strong>const</strong>: Block-scoped, cannot be reassigned or redeclared</li></ul><p>Use <code>const</code> by default, <code>let</code> when you need to reassign, and avoid <code>var</code>.</p>",
+    "author": "js_expert",
+    "authorName": "JS Expert",
+    "votes": 22,
+    "isAccepted": true,
+    "createdAt": "2024-01-14T16:00:00Z",
+    "updatedAt": "2024-01-14T16:00:00Z"
+  }
+] 

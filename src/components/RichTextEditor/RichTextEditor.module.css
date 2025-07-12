@@ -1,0 +1,323 @@
+.editorContainer {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.toolbarGroup {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  padding-right: 0.75rem;
+  border-right: 1px solid #e5e7eb;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.toolbarGroup:last-child {
+  border-right: none;
+}
+
+.toolbarButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0.25rem 0.5rem;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  color: #374151;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.toolbarButton:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.toolbarButton:active {
+  background-color: #e5e7eb;
+  transform: translateY(1px);
+}
+
+.toolbarButton strong {
+  font-weight: bold;
+}
+
+.toolbarButton em {
+  font-style: italic;
+}
+
+.toolbarButton s {
+  text-decoration: line-through;
+}
+
+.editor {
+  min-height: 200px;
+  padding: 1rem;
+  outline: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+  overflow-y: auto;
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: normal !important;
+}
+
+.editor:empty:before {
+  content: attr(placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+.editor:focus {
+  background-color: #fafafa;
+}
+
+/* Ensure all content inside editor is left-to-right */
+.editor * {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: normal !important;
+}
+
+/* Emoji Picker */
+.emojiPicker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  max-width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.25rem;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.emojiButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: background-color 0.2s;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.emojiButton:hover {
+  background-color: #f3f4f6;
+}
+
+/* Link Input */
+.linkInput {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 1000;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.linkTextInput,
+.linkUrlInput {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.linkTextInput:focus,
+.linkUrlInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.insertLinkButton {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.insertLinkButton:hover {
+  background-color: #2563eb;
+}
+
+/* Editor Content Styles */
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6 {
+  margin: 0.5rem 0;
+  font-weight: 600;
+  line-height: 1.25;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor h1 { font-size: 1.5rem; }
+.editor h2 { font-size: 1.25rem; }
+.editor h3 { font-size: 1.125rem; }
+
+.editor p {
+  margin: 0.5rem 0;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor ul,
+.editor ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor li {
+  margin: 0.25rem 0;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor a {
+  color: #3b82f6;
+  text-decoration: underline;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.editor a:hover {
+  color: #2563eb;
+}
+
+.editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.editor blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  color: #6b7280;
+  font-style: italic;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875em;
+  direction: ltr; /* Ensure left-to-right direction */
+}
+
+.editor pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+  direction: ltr; /* Ensure left-to-right direction */
+  text-align: left; /* Ensure left alignment */
+}
+
+.editor pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .toolbarGroup {
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .toolbarGroup:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .emojiPicker {
+    max-width: 250px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .linkInput {
+    min-width: 250px;
+  }
+}
+
+/* Focus states for accessibility */
+.toolbarButton:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.emojiButton:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+} 

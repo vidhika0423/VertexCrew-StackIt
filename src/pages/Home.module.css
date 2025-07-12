@@ -3,11 +3,18 @@
     max-width: 800px;
     margin: auto;
     text-align: center;
+    position: relative; /* Add this to enable absolute positioning of child elements */
   }
   
   .heading {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    text-align: left;
+    color: #333;
+    font-weight: bold;
   }
   
   .subtext {
@@ -28,5 +35,108 @@
   
   .joinBtn:hover {
     background-color: #0056b3;
+  }
+
+  .topRightButtons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .topRightButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .topRightButton:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .signInButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .signInButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .userButton {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: 2px solid #e9ecef !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .userButton:hover {
+    border-color: #007bff !important;
+    transform: scale(1.05) !important;
+  }
+
+  .content {
+    margin-top: 4rem;
+    text-align: left;
+  }
+
+  .questionsList {
+    margin-top: 2rem;
+  }
+
+  .searchResults {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .searchResults p {
+    margin: 0;
+    color: #495057;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+
+  .emptyState {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px dashed #dee2e6;
+  }
+
+  .emptyState p {
+    font-size: 1.1rem;
+    margin: 0;
   }
   

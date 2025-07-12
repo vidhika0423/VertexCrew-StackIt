@@ -1,0 +1,74 @@
+.commentSection {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e1e4e8;
+}
+
+.commentsList {
+  margin-bottom: 1rem;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.author {
+  font-weight: 600;
+  color: #0366d6;
+}
+
+.content {
+  color: #333;
+}
+
+.date {
+  color: #888;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.noComments {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.commentForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:disabled {
+  background: #bcd6fa;
+  cursor: not-allowed;
+}
+
+.loading {
+  color: #888;
+  font-style: italic;
+} 

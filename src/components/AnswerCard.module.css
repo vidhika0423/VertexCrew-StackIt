@@ -1,0 +1,157 @@
+.answerCard {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.answerCard:hover {
+  border-color: #0366d6;
+}
+
+.answerHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.voteSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+
+.voteButton {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.voteButton:hover {
+  color: #0366d6;
+}
+
+.voteCount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #24292e;
+  margin: 0.25rem 0;
+}
+
+.answerInfo {
+  flex: 1;
+}
+
+.answerMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.authorName {
+  font-size: 0.9rem;
+  color: #0366d6;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #586069;
+}
+
+.acceptedBadge {
+  background: #28a745;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.answerContent {
+  color: #24292e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.answerContent p {
+  margin: 0 0 1rem 0;
+}
+
+.answerContent p:last-child {
+  margin-bottom: 0;
+}
+
+.answerContent strong {
+  font-weight: 600;
+}
+
+.answerContent em {
+  font-style: italic;
+}
+
+.answerContent code {
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875em;
+}
+
+.answerContent pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.answerContent pre code {
+  background: none;
+  padding: 0;
+}
+
+.answerContent ul,
+.answerContent ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.answerContent li {
+  margin: 0.5rem 0;
+}
+
+.answerContent blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .answerHeader {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .voteSection {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .answerMeta {
+    justify-content: center;
+  }
+} 
